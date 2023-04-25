@@ -1,53 +1,53 @@
-# Markdown
-This is a website created using markdown.
+# Profile Page
 
-----------------------------
-## Outline
-- [Markdown](#markdown)
-  - [Outline](#outline)
-  - [Section 1](#section-1)
-  - [Image](#image)
-
-------------------------
+## About me
 
 
+![Anshit Gupta](https://img.freepik.com/free-vector/it-takes-two-tango-idiom_1308-17930.jpg?w=740&t=st=1682403778~exp=1682404378~hmac=abb985bb7b6671e7cbdeddd204c72ef5a009a8818bd6055e445b251401350b66 "Anshit Gupta")
 
-## Section 1 
-This is section 1 of the file.  
-This is second line of *section 1*.
-> print("Hello world")  
->
->Hello World
----------------------------
+Hello , my name is Anshit Gupta . I am a BTech (Mathematics And Computing) student at [IIT Goa](https://iitgoa.ac.in/).
+***
 
-Now ,let's create an ordered list.
+## Education
 
-1. Hi
-   1. Hello
-   2. Hi
-2. Namaste
+| Academic Year     | Standard    |                      School Name                 | 
+| :---------------: | :---------: | :-----------------------------------------:      | 
+|   2019-2020       |      10     |  Babu Gaya Prashad Convent School , Ayodhya      | 
+|   2021-2022       |      12     |  Awadh International School , Ayodhya            |
 
-------------------------------
-Now, its time for an unordered list.
- - Hi
-     * hello    
-        > a blockquote. 
-     * hi
- * Namaste
+***
 
-************************
-## Image
-my favorite url [Click](https://www.youtube.com/ "enjoy youtube videos")
+## Course @IIT Goa
+
+Here are the courses for first year spring semester at IITGOA.
+
+- [**CS102**](https://clintpgeorge.github.io/cs-102/spring-2023/)   Software Tools             *Clint P. George*
+- **MA103**   ODE                        *Saumya Bajpai*
+- **BIO101**  Introduction to Biology    *Nipa Chongdar & Sreenath Balakrishnan*
+- **PH102**   Physics                    *Vaibhav Wasnik*
+- **EE102**   Introduction to Electrical *Apeksha Madhukar*
+          & Electronic Engineering                         
+- **ELPP**    English                    *Neeraja Raghavan*
+- **NO101**   Sports                     *Santosh Sir*
+- **ME102**   Engineering Graphics       *Arindam Das*
+
+***
+
+## Hobbies & Interests
+
+My hobby is playing flute, listening to musics, watching movies.
 
 
-<https://www.google.com/>   
 
 
-[![Look the sun is rising !](https://e0.pxfuel.com/wallpapers/751/167/desktop-wallpaper-good-morning-rising-sun-and-sea-rocks-red-sun.jpg "Rising sun") ](https://www.markdownguide.org/basic-syntax/#code-blocks )
 
 
------------------------------------- 
-This is a normal paragraph:
 
-    This is a code block.
+
+
+
+
+
+
+
     
