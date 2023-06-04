@@ -22,10 +22,9 @@
           }
         button{
             text-align: center;
-            margin-top: 5%;
-            margin-bottom: 5%;
+            
             border-radius: 5px;  
-            padding: 30%;
+            padding: 18px;
         
             
             
@@ -58,26 +57,28 @@
                 <td><button id="btn1" value="1" onclick="wr('btn1')">1</button></td>
                 <td><button id="btn2" value="2" onclick="wr('btn2')">2</button></td>
                 <td><button id="btn3" value="3" onclick="wr('btn3')">3</button></td>
-                <td><button id="btn+" onclick="add()">+</button></td>
+                <td><button id="btn+" value="+" onclick="wr('btn+')">+</button></td>
 
             </tr>
             <tr>
                 <td><button id="btn4" value="4" onclick="wr('btn4')">4</button></td>
                 <td><button id="btn5" value="5" onclick="wr('btn5')">5</button></td>
                 <td><button id="btn6" value="6" onclick="wr('btn6')">6</button></td>
-                <td><button id="btn-" onclick="substract()">-</button></td>
+                <td><button id="btn-" value="-"  onclick="wr('btn-')">-</button></td>
 
             </tr>
             <tr>
                 <td><button id="btn7" value="7" onclick="wr('btn7')">7</button></td>
                 <td><button id="btn8" value="8" onclick="wr('btn8')">8</button></td>
                 <td><button id="btn9" value="9" onclick="wr('btn9')">9</button></td>
-                <td><button id="btn*" onclick="multiply()">*</button></td>
+                <td><button id="btn*" value="*" onclick="wr('btn*')">*</button></td>
 
             </tr>
-            <tr><td colspan="2"><button id="ans"  onclick="ans()">ans</button></td>
-                <td><button id="btn/" onclick="divide()">/</button></td>
+            <tr>
+                <td><button id="btn/" value="/" onclick="wr('btn/')">/</button></td>
                 <td><button id="btn0" value="0" onclick="wr('btn0')">0</button></td>
+                <td><button id="ans"  onclick="ans()">ans</button></td>
+                <td><button id="clear"  onclick="clear_screen()">AC</button></td>
             </tr>
             
 
@@ -85,91 +86,27 @@
         
 
         <script>
-            var a=0;
-            var s="";
-            var c=0;
+            
             function wr(b){
-                if(c==1) {
-                    document.getElementById("screen").value="";
-                    c=0;
-                    
-
-
-
+                if (document.getElementById("screen").value==0){
+                    document.getElementById("screen").value=""
                 }
+                
                 document.getElementById("screen").value+=document.getElementById(b).value;
 
             
             }
             
             
-            function add(){
-                
-                a=document.getElementById("screen").value;
-                document.getElementById("screen").value="";
-
-
-                a=parseInt(a);
-                document.getElementById("screen").value="+";
-                s="+"
-                c=1
-
-            }
-
-            function substract(){
-                a=document.getElementById("screen").value;
-                document.getElementById("screen").value="";
-
-
-                a=parseInt(a);
-                document.getElementById("screen").value="-";
-                s="-"
-                c=1
-            }
-            function multiply(){
-                a=document.getElementById("screen").value;
-                document.getElementById("screen").value="";
-
-
-                a=parseInt(a);
-                document.getElementById("screen").value="*";
-                s="*"
-                c=1
-            }
-            function divide(){
-                a=document.getElementById("screen").value;
-                document.getElementById("screen").value="";
-
-
-                a=parseInt(a);
-                document.getElementById("screen").value="/";
-                s="/"
-                c=1
-            }
             function ans(){
                 
                 var b=document.getElementById("screen").value;
-                b=parseInt(b);
-                if(s=='+'){
-                    document.getElementById("screen").value=a+b;
-                    s=""
-                }
-                else if(s=="-"){
-                    document.getElementById("screen").value=a-b;
-                    
-                    s=""
-                }
-                else if(s=="*"){
-                    document.getElementById("screen").value=a*b;
-                    
-                    s=""
-                }
-                else if(s=="/"){
-                    document.getElementById("screen").value=a/b;
-                    
-                    s=""
-                }
+                var ans=eval(b);
+                document.getElementById("screen").value=ans;
 
+            }
+            function clear_screen(){
+                document.getElementById("screen").value=0;
             }
         </script>
     
